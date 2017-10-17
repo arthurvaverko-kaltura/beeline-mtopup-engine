@@ -1,0 +1,43 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:eng="http://beeline.ru/webtopup/engine">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <eng:ProceedPaymentResponse>
+         <!--Optional:-->
+         <eng:ProceedPaymentResult>
+            <!--Optional:-->
+            <eng:MainId>?</eng:MainId>
+            <!--Optional:-->
+            <eng:Payments>
+               <!--Zero or more repetitions:-->
+               <eng:RegisteredPayment>
+                  <!--Optional:-->
+                  <eng:Amount>?</eng:Amount>
+                  <!--Optional:-->
+                  <eng:BIN>?</eng:BIN>
+                  <!--Optional:-->
+                  <eng:Ctn>?</eng:Ctn>
+                  <!--Optional:-->
+                  <eng:EncMtopupData>?</eng:EncMtopupData>
+                  <!--Optional:-->
+                  <eng:Id>?</eng:Id>
+                  <!--Optional:-->
+                  <eng:OrderNum>?</eng:OrderNum>
+                  <!--Optional:-->
+                  <eng:Result>
+                     <!--Optional:-->
+                     <eng:Code>?</eng:Code>
+                     <!--Optional:-->
+                     <eng:Description>?</eng:Description>
+                     <!--Optional:-->
+                     <eng:Details>?</eng:Details>
+                  </eng:Result>
+                  <!--Optional:-->
+                  <eng:Status>?</eng:Status>
+                  <!--Optional:-->
+                  <eng:Tail>?</eng:Tail>
+               </eng:RegisteredPayment>
+            </eng:Payments>
+         </eng:ProceedPaymentResult>
+      </eng:ProceedPaymentResponse>
+   </soapenv:Body>
+</soapenv:Envelope>
